@@ -1,3 +1,3 @@
 # My Portfolio
 
-This respoistory holds serves as my personal portfolio. The website uses a modified Jekyll theme, [Hyde](https://github.com/poole/hyde), and uses Github Pages.
+This respository contains the files for my personal portfolio. The website uses a modified Bootstrap theme, [Resume](https://startbootstrap.com/theme/resume), and uses Github Pages.
