@@ -3,14 +3,14 @@
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
     */
-    (function ($) {
+(function ($) {
     "use strict"; // Start of use strict
 
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
         if (
             location.pathname.replace(/^\//, "") ==
-                this.pathname.replace(/^\//, "") &&
+            this.pathname.replace(/^\//, "") &&
             location.hostname == this.hostname
         ) {
             var target = $(this.hash);
@@ -36,7 +36,27 @@
     });
 
     // Activate scrollspy to add active class to navbar items on scroll
-    $("body").scrollspy({
+    $('#fader').scrollspy({
         target: "#sideNav",
     });
+
+    // Fading in
+    $(window).on("load", function () {
+        $('#navigationP').collapse('show');
+        $('#fader').fadeIn(600);
+    });
+
+    // Fading out
+    $('#index').click(function (e) {
+        e.preventDefault();
+        $('#navigationP').collapse('hide');
+        $('#fader').fadeOut(200, function() {window.location.replace('index.html');});
+    });
+
+    // Fading out
+    $('#portfolio').click(function (e) {
+        e.preventDefault();
+        $('#fader').fadeOut(200, function() {window.location.replace('portfolio.html');});
+    });
+
 })(jQuery); // End of use strict
