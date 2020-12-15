@@ -36,9 +36,15 @@
     });
 
     // Activate scrollspy to add active class to navbar items on scroll
-    $('#fader').scrollspy({
-        target: "#sideNav",
+    $('body').scrollspy({
+        target: "#navbarSupportedContent",
     });
+
+    // Tabs
+    $('#myTab a').on('click', function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    })
 
     // Fading in
     $(window).on("load", function () {
@@ -50,13 +56,13 @@
     $('#index').click(function (e) {
         e.preventDefault();
         $('#navigationP').collapse('hide');
-        $('#fader').fadeOut(100, function() {window.location.replace('index.html');});
+        $('#fader').fadeOut(100, function () { window.location.replace('index.html'); });
     });
 
     // Fading out
     $('#portfolio').click(function (e) {
         e.preventDefault();
-        $('#fader').fadeOut(100, function() {window.location.replace('portfolio.html');});
+        $('#fader').fadeOut(100, function () { window.location.replace('portfolio.html'); });
     });
 
 })(jQuery); // End of use strict
