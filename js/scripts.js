@@ -43,20 +43,20 @@
     // Fading in
     $(window).on("load", function () {
         $('#navigationP').collapse('show');
-        $('#fader').fadeIn(600);
+        $('#fader').fadeIn(400);
     });
 
     // Fading out
     $('#index').click(function (e) {
         e.preventDefault();
         $('#navigationP').collapse('hide');
-        $('#fader').fadeOut(200, function() {window.location.replace('index.html');});
+        $('#fader').fadeOut(100, function() {window.location.replace('index.html');});
     });
 
     // Fading out
     $('#portfolio').click(function (e) {
         e.preventDefault();
-        $('#fader').fadeOut(200, function() {window.location.replace('portfolio.html');});
+        $('#fader').fadeOut(100, function() {window.location.replace('portfolio.html');});
     });
 
 })(jQuery); // End of use strict
