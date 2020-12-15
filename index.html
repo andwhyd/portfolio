@@ -19,7 +19,9 @@
 </head>
 
 <body id="page-top">
-    <!-- Navigation-->
+    <div id="tsparticles"></div>
+
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
             <span class="d-block d-lg-none">Andy Ding</span>
@@ -81,6 +83,129 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+
+    <!-- Particles -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.1/tsparticles.min.js"
+        integrity="sha512-PYHWDEuXOTJ9MZ+/QHqkbgiEYZ+LImQv3i/9NyYOABFvK37e4q4Wg7aQDN1JpoGiEu1TYZh6JMrZluZox2gbDA=="
+        crossorigin="anonymous"></script>
+    <script>
+        const particles = {
+          "fpsLimit": 120,
+          "particles": {
+            "number": {
+              "value": 100,
+              "density": {
+                "enable": true,
+                "value_area": 800
+              }
+            },
+            "color": {
+              "value": "#BFD2EC",
+              "animation": {
+                "enable": false,
+                "speed": 20,
+                "sync": false
+              }
+            },
+            "shape": {
+              "type": "polygon",
+              "stroke": {
+                "width": 0
+              },
+              "polygon": {
+                "nb_sides": 6
+              },
+            },
+            "opacity": {
+              "value": 1,
+              "random": true,
+              "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0,
+                "sync": false
+              }
+            },
+            "size": {
+              "value": 15,
+              "random": true,
+              "anim": {
+                "enable": false,
+                "speed": 20,
+                "size_min": 0.1,
+                "sync": false
+              }
+            },
+            "links": {
+              "enable": false,
+              "distance": 100,
+              "color": "#ffffff",
+              "opacity": 0.4,
+              "width": 1
+            },
+            "move": {
+              "enable": true,
+              "speed": 1,
+              "direction": "none",
+              "random": false,
+              "straight": false,
+              "out_mode": "out",
+              "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 600
+              }
+            }
+          },
+          "interactivity": {
+            "detect_on": "window",
+            "events": {
+              "onhover": {
+                "enable": true,
+                "mode": "bubble"
+              },
+              "onclick": {
+                "enable": false,
+                "mode": "push"
+              },
+              "resize": true
+            },
+            "modes": {
+              "grab": {
+                "distance": 400,
+                "line_linked": {
+                  "opacity": 1
+                }
+              },
+              "bubble": {
+                "distance": 150,
+                "size": 0,
+                "duration": 3,
+                "opacity": 0
+              },
+              "repulse": {
+                "distance": 200
+              },
+              "push": {
+                "particles_nb": 4
+              },
+              "remove": {
+                "particles_nb": 2
+              }
+            }
+          },
+          "retina_detect": true,
+          "background": {
+            "color": "#ffffff",
+            "image": "",
+            "position": "",
+            "repeat": "",
+            "size": ""
+          }
+        };
+      
+        tsParticles.load('tsparticles',particles);
+      </script>
 </body>
 
 </html>
