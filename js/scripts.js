@@ -50,6 +50,7 @@
     $(window).on("load", function () {
         $('#navigationP').collapse('show');
         $('#fader').fadeIn(400);
+        $('#tsparticles').hide(0, function() {$('#tsparticles').fadeIn(800);});
     });
 
     // Fading out
@@ -62,7 +63,16 @@
     // Fading out
     $('#portfolio').click(function (e) {
         e.preventDefault();
+        $('#tsparticles').fadeOut(100);
         $('#fader').fadeOut(100, function () { window.location.replace('portfolio.html'); });
+    });
+
+    // Fading out
+    $('#about').click(function (e) {
+        e.preventDefault();
+        $('#tsparticles').fadeOut(100);
+        $('#navigationP').collapse('hide');
+        $('#fader').fadeOut(100, function () { window.location.replace('about.html'); });
     });
 
 })(jQuery); // End of use strict
