@@ -35,10 +35,6 @@
         $(".navbar-collapse").collapse("hide");
     });
 
-    // Activate scrollspy to add active class to navbar items on scroll
-    $('body').scrollspy({
-        target: "#navbarSupportedContent",
-    });
 
     // Tabs
     $('#myTab a').on('click', function (e) {
@@ -49,7 +45,12 @@
     // Fading in
     $(window).on("load", function () {
         $('#navigationP').collapse('show');
-        $('#fader').fadeIn(400);
+        $('#fader').fadeIn(220, function () {
+            // Activate scrollspy
+            $('body').scrollspy({
+                target: "#navigationP",
+            });
+        });
         $('#tsparticles').hide(0, function () { $('#tsparticles').fadeIn(800); });
     });
 
@@ -57,22 +58,22 @@
     $('#index').click(function (e) {
         e.preventDefault();
         $('#navigationP').collapse('hide');
-        $('#fader').fadeOut(100, function () { window.location.replace('index.html'); });
+        $('#fader').fadeOut(130, function () { window.location.replace('index.html'); });
     });
 
     // Fading out
     $('#portfolio').click(function (e) {
         e.preventDefault();
-        $('#tsparticles').fadeOut(100);
-        $('#fader').fadeOut(100, function () { window.location.replace('portfolio.html'); });
+        $('#tsparticles').fadeOut(120);
+        $('#fader').fadeOut(130, function () { window.location.replace('portfolio.html'); });
     });
 
     // Fading out
     $('#about').click(function (e) {
         e.preventDefault();
-        $('#tsparticles').fadeOut(100);
+        $('#tsparticles').fadeOut(120);
         $('#navigationP').collapse('hide');
-        $('#fader').fadeOut(100, function () { window.location.replace('about.html'); });
+        $('#fader').fadeOut(130, function () { window.location.replace('about.html'); });
     });
 
 })(jQuery); // End of use strict
