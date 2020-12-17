@@ -50,7 +50,7 @@
     $(window).on("load", function () {
         $('#navigationP').collapse('show');
         $('#fader').fadeIn(400);
-        $('#tsparticles').hide(0, function() {$('#tsparticles').fadeIn(800);});
+        $('#tsparticles').hide(0, function () { $('#tsparticles').fadeIn(800); });
     });
 
     // Fading out
