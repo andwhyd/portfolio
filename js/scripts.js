@@ -4,6 +4,25 @@
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
     */
 (function ($) {
-    "use strict"; // Start of use strict
+  "use strict"; // Start of use strict
+
+  // Tabs
+  $('#myTabs a').click(function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+  })
+
+  // Fading in
+  // $(window).on("load", function () {
+  //   $('#navigationP').collapse('hide');
+  // });
+
+  $(".dropdown").hover(
+    function() {
+      $('#navigationP').collapse('show');
+     }, function() {
+      $('#navigationP').collapse('hide');
+     }
+   );
 
 })(jQuery); // End of use strict
