@@ -9,7 +9,7 @@
   <title>Andy Ding</title>
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
   <!-- Font Awesome icons (free version)-->
-  <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/07711c82b8.js" crossorigin="anonymous"></script>
   <!-- Google fonts-->
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
@@ -17,13 +17,12 @@
   <link href="css/styles.css" rel="stylesheet" />
 </head>
 
-<body id="page-top">
-  <div id="tsparticles"></div>
-
+<body id="home">
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#">
-      <span class="d-block d-lg-none">Andy Ding</span>
+    <a class="navbar-brand" href="#">
+      <span class="d-block d-lg-none" style="width: 40px;"><img class="img-fluid img-thumbnail rounded-circle mx-auto"
+          src="assets/img/favicon.ico" alt="" /></span>
       <span class="d-none d-lg-block"><img class="img-fluid img-profileA rounded-circle mx-auto mb-2"
           src="assets/img/profile.jpg" alt="" /></span>
     </a>
@@ -33,17 +32,39 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li id="about" class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li id='portfolio' class="nav-item dropdown"><a class="nav-link dropdown-toggle"
-            href="portfolio.html">Portfolio</a>
+        <li class="nav-item"><a class="nav-link" href="assets/documents/Ding_Andy_Resume.pdf" target="_blank">Resume <i
+              class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#navigationP">Experience</a>
+          <div class="collapse" id="navigationP">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="work.html">Work</a></li>
+              <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+              <li class="nav-item"><a class="nav-link" href="academic.html">Academic</a></li>
+              <li class="nav-item"><a class="nav-link" href="personal.html">Personal</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <ul class="navbar-nav mt-auto mb-3">
+        <li class="nav-item">
+          <div class="btn-group" role="group">
+            <a class="nav-link pr-2" href="https://www.linkedin.com/in/andyhding" target="_blank"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+            <a class="nav-link pr-2" href="https://github.com/andwhyd" target="_blank"><i
+                class="fa-brands fa-github"></i></a>
+            <a class="nav-link pr-2" href="https://www.instagram.com/andd.why/" target="_blank"><i
+                class="fa-brands fa-instagram"></i></a>
+          </div>
         </li>
       </ul>
     </div>
   </nav>
   <!-- Page Content-->
-  <div id="fader" class="container-fluid p-0">
+  <div class="container-fluid p-0">
     <!-- About-->
-    <section class="resume-section" id="About">
-      <div class="resume-section-content">
+    <section class="content-section" id="home">
+      <div class="content-section-content">
         <h1 class="mb-0">
           Andy
           <span class="text-primary">Ding</span>
@@ -58,21 +79,9 @@
         <p class="h4 mb-3">I am passionate about using engineering to develop helpful and efficient products
           to
           tackle complex problems.</p>
-        <p id="about" class="lead mb-5">
-          <a href="about.html">Learn more about me!</a>
-        </p>
-        <p id="portfolio" class="lead mb-3">Use the icons below to view my resume and other sites, or check out
-          my
-          <a href="portfolio.html">portfolio</a> to view some of my past and current work!
-        </p>
-        <div class="social-icons">
-          <a class="social-icon" href="https://www.linkedin.com/in/andyhding" target="_blank"><i
-              class="fab fa-linkedin-in"></i></a>
-          <a class="social-icon" href="https://github.com/andwhyd" target="_blank"><i class="fab fa-github"></i></a>
-          <a class="social-icon" href="https://www.instagram.com/andd.why/" target="_blank"><i
-              class="fab fa-instagram"></i></a>
-          <a class="social-icon" href="assets/documents/Ding_Andy_Resume.pdf" target="_blank"><i
-              class="far fa-file-alt"></i></a>
+        <div class="btn-group">
+          <a role="button" class="btn btn-lg btn-secondary mb-2" href="about.html">Learn more about me</a>
+          <a role="button" class="btn btn-lg btn-secondary mb-2" href="work.html">or view my experience!</a>
         </div>
       </div>
     </section>
@@ -85,128 +94,6 @@
   <!-- Core theme JS-->
   <script src="js/scripts.js"></script>
 
-  <!-- Particles -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.1/tsparticles.min.js"
-    integrity="sha512-PYHWDEuXOTJ9MZ+/QHqkbgiEYZ+LImQv3i/9NyYOABFvK37e4q4Wg7aQDN1JpoGiEu1TYZh6JMrZluZox2gbDA=="
-    crossorigin="anonymous"></script>
-  <script>
-    const particles = {
-      "fpsLimit": 120,
-      "particles": {
-        "number": {
-          "value": 100,
-          "density": {
-            "enable": true,
-            "value_area": 800
-          }
-        },
-        "color": {
-          "value": "#BFD2EC",
-          "animation": {
-            "enable": false,
-            "speed": 20,
-            "sync": false
-          }
-        },
-        "shape": {
-          "type": "polygon",
-          "stroke": {
-            "width": 0
-          },
-          "polygon": {
-            "nb_sides": 6
-          },
-        },
-        "opacity": {
-          "value": .7,
-          "random": true,
-          "anim": {
-            "enable": false,
-            "speed": 1,
-            "opacity_min": 0,
-            "sync": false
-          }
-        },
-        "size": {
-          "value": 80,
-          "random": false,
-          "anim": {
-            "enable": true,
-            "speed": 20,
-            "size_min": 60,
-            "sync": false
-          }
-        },
-        "links": {
-          "enable": false,
-          "distance": 100,
-          "color": "#ffffff",
-          "opacity": 0.4,
-          "width": 1
-        },
-        "move": {
-          "enable": true,
-          "speed": 1,
-          "direction": "none",
-          "random": false,
-          "straight": false,
-          "out_mode": "out",
-          "attract": {
-            "enable": false,
-            "rotateX": 600,
-            "rotateY": 600
-          }
-        }
-      },
-      "interactivity": {
-        "detect_on": "window",
-        "events": {
-          "onhover": {
-            "enable": true,
-            "mode": "bubble"
-          },
-          "onclick": {
-            "enable": false,
-            "mode": "push"
-          },
-          "resize": true
-        },
-        "modes": {
-          "grab": {
-            "distance": 400,
-            "line_linked": {
-              "opacity": 1
-            }
-          },
-          "bubble": {
-            "distance": 150,
-            "size": 0,
-            "duration": 3,
-            "opacity": 0
-          },
-          "repulse": {
-            "distance": 200
-          },
-          "push": {
-            "particles_nb": 4
-          },
-          "remove": {
-            "particles_nb": 2
-          }
-        }
-      },
-      "retina_detect": true,
-      "background": {
-        "color": "#ffffff",
-        "image": "",
-        "position": "",
-        "repeat": "",
-        "size": ""
-      }
-    };
-
-    tsParticles.load('tsparticles', particles);
-  </script>
 </body>
 
 </html>
