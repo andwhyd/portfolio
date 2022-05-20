@@ -12,11 +12,6 @@
     $(this).tab('show')
   })
 
-  // Fading in
-  // $(window).on("load", function () {
-  //   $('#navigationP').collapse('hide');
-  // });
-
   $(".dropdown").hover(
     function() {
       $('#navigationP').collapse('show');

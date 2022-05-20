@@ -9,7 +9,7 @@
   <title>Portfolio</title>
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
   <!-- Font Awesome icons (free version)-->
-  <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/07711c82b8.js" crossorigin="anonymous"></script>
   <!-- Google fonts-->
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
@@ -21,7 +21,8 @@
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a id="index" class="navbar-brand js-scroll-trigger" href="index.html">
-      <span class="d-block d-lg-none">Andy Ding</span>
+      <span class="d-block d-lg-none" style="width: 40px;"><img class="img-fluid img-thumbnail rounded-circle mx-auto"
+          src="assets/img/favicon.ico" alt="" /></span>
       <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
           src="assets/img/profile.jpg" alt="" /></span>
     </a>
@@ -31,7 +32,8 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li id="about" class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="assets/documents/Ding_Andy_Resume.pdf">Research</a></li>
+        <li class="nav-item"><a class="nav-link" href="assets/documents/Ding_Andy_Resume.pdf" target="_blank">Resume <i
+              class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
         <li class="nav-item dropdown active">
           <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#navigationP">Experience</a>
           <div class="collapse show" id="navigationP">
@@ -43,11 +45,16 @@
             </ul>
           </div>
         </li>
+      </ul>
+      <ul class="navbar-nav mt-auto mb-3">
         <li class="nav-item">
           <div class="btn-group" role="group">
-            <a class="nav-link pr-2" href="https://www.linkedin.com/in/andyhding" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a class="nav-link pr-2" href="https://github.com/andwhyd" target="_blank"><i class="fab fa-github"></i></a>
-            <a class="nav-link pr-2" href="https://www.instagram.com/andd.why/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a class="nav-link pr-2" href="https://www.linkedin.com/in/andyhding" target="_blank"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+            <a class="nav-link pr-2" href="https://github.com/andwhyd" target="_blank"><i
+                class="fa-brands fa-github"></i></a>
+            <a class="nav-link pr-2" href="https://www.instagram.com/andd.why/" target="_blank"><i
+                class="fa-brands fa-instagram"></i></a>
           </div>
         </li>
       </ul>
@@ -82,15 +89,16 @@
           <div class="tab-pane show active" id="BRC" role="tabpanel" aria-labelledby="BRC-tab">
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
               <div class="flex-grow-1">
-                <h3 class="mb-2">Boiler Robotics</h3>
-                <p>I currently serve as the robotic arm lead for the Boiler Robotics Club. My group is
+                <h3 class="mb-1">Boiler Robotics</h3>
+                <p class="lead mb-4"><span class="text-primary">January 2020 - Present</span></p>
+                <p class="lead">I currently serve as the robotic arm lead for the Boiler Robotics Club. My group is
                   focused on the design and production of a robot arm capable of completing various
                   tasks at the annual <a href="http://urc.marssociety.org/" target="_blank">University
                     Rover Challenge</a>. Being a new team, my team has had the unique opportunity to
                   build our arm from the ground up.
                 </p>
                 <h4 class="mb-2">Requirements</h4>
-                <p>Being a new team, our primary focus was on determining the design parameters for our
+                <p class="lead">Being a new team, our primary focus was on determining the design parameters for our
                   arm. After reviewing previous competitions and the game manual for 2020, our
                   team came up with the following requirements:
                 <ul>
@@ -100,8 +108,8 @@
                 </ul>
                 </p>
                 <h4 class="mb-2">Current Status</h4>
-                <p>The fall 2020 semester focused on completing the CAD design for our robot arm,
-                  working on the previous semester’s research and testing. We have settled on a SCARA
+                <p class="lead">The fall 2020 semester focused on completing the CAD design for our robot arm,
+                  working on the previous semester's research and testing. We have settled on a SCARA
                   style arm that allows our arm to easily reach different positions in all 6 axes. Due
                   to limited software experience, we decided on this SCARA style to limit the control
                   complexity. We also believe this platform gives us the most stability compared to
@@ -110,7 +118,7 @@
                   strength of the arm and its ability to complete the required missions.
                 </p>
                 <h4 class="mb-2">Personal Contibutions</h4>
-                <p>On the logistical side, my contributions have included scheduling meetings and other
+                <p class="lead">On the logistical side, my contributions have included scheduling meetings and other
                   housekeeping tasks. I am responsible for maintaining our bill of materials as well
                   as ordering and distributing parts. The restrictions from COVID-19 this semester
                   also lead to me looking into various ways to ensure my team was fully engaged and
@@ -120,7 +128,7 @@
                   weekly meetings and recording the progress made each week allowed us to review our
                   progress over the semester and find areas we could improve as well.
                 </p>
-                <p>On the technical side, I focused on the design of our gantry lift system for the
+                <p class="lead">On the technical side, I focused on the design of our gantry lift system for the
                   Z-axis of the arm as well as the software stack needed to control our arm. For the
                   gantry lift, my design focused on using a reliable leadscrew drive that prevented
                   accidental backdriving. The custom carriage and bearing assembly ensured smooth
@@ -135,29 +143,29 @@
                   end of the semester and prepare for assembly starting in Spring 2021.
                 </p>
                 <h4 class="mb-2">Images</h4>
-                <img class="rounded-lg mx-auto mb-2" style="width: 25%;" src="assets/img/robot_arm.png" alt="" />
-                <img class="rounded-lg mx-auto mb-2" style="width: 70%;" src="assets/img/rviz.png" alt="" />
-              </div>
-              <div class="flex-shrink-0"><span class="text-primary mb-0">January 2020 - Present</span>
+                <img class="rounded-lg mx-auto mb-2" style="width: 25%;" src="assets/img/academic/robot_arm.png"
+                  alt="" />
+                <img class="rounded-lg mx-auto mb-2" style="width: 70%;" src="assets/img/academic/rviz.png" alt="" />
               </div>
             </div>
           </div>
           <div class="tab-pane" id="EPICS" role="tabpanel" aria-labelledby="EPICS-tab">
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
               <div class="flex-grow-1">
-                <h3 class="mb-3">PURDUE EPICS MOBI - Robbins</h3>
-                <p><a href="https://engineering.purdue.edu/EPICS" target="_blank">Purdue EPICS</a> is a
+                <h3 class="mb-1">PURDUE EPICS MOBI - Robbins</h3>
+                <p class="lead mb-4"><span class="text-primary">August 2019 - May 2020</span></p>
+                <p class="lead"><a href="https://engineering.purdue.edu/EPICS" target="_blank">Purdue EPICS</a> is a
                   program that partners students with community organizations and clients to tackle
                   local and global issues.
                 </p>
                 <h4 class="mb-2">MOBI</h4>
-                <p>The MOBI team focuses on the development of technology to assist in human mobility.
+                <p class="lead">The MOBI team focuses on the development of technology to assist in human mobility.
                   Projects of this team have included interactive campus maps for those with
                   disabilities and custom baseballs to allow visually impaired athletes to enjoy
                   baseball as well.
                 </p>
                 <h4 class="mb-2">Robbins</h4>
-                <p>The aim of the Robbins project is to build an exam step for use during sonographic
+                <p class="lead">The aim of the Robbins project is to build an exam step for use during sonographic
                   leg mapping that reduces strain in the lumbar spine and brachial joint in the
                   sonographers and allows patients to be comfortable for the duration of the
                   procedure. For the duration of the project, the team was partnered with IU Health
@@ -167,7 +175,7 @@
                   service.
                 </p>
                 <h4 class="mb-2">Personal Contributions</h4>
-                <p>Working with our project partner, I led my team of four in designing and
+                <p class="lead">Working with our project partner, I led my team of four in designing and
                   manufacturing the stand. I used my skills in Solidworks to model our prototype and
                   we manufactured and presented our improved stand in March 2020. Due to a lack of
                   advanced manufacturing capabilities, the design had to be constructed using basic
@@ -177,19 +185,20 @@
                   implement client feedback and meet tight deadlines.
                 </p>
                 <h4 class="mb-2">Images</h4>
-                <img class="rounded-lg mx-auto mb-2" style="width: 45%;" src="assets/img/dec_matrix.png" alt="" />
-                <img class="rounded-lg mx-auto mb-2" style="width: 40%;" src="assets/img/stand.png" alt="" />
-                <img class="rounded-lg mx-auto mb-2" style="width: 50%;" src="assets/img/armrest.png" alt="" />
-                <img class="rounded-lg mx-auto mb-2" style="width: 35%;" src="assets/img/testing.png" alt="" />
+                <img class="rounded-lg mx-auto mb-2" style="width: 45%;" src="assets/img/academic/dec_matrix.png"
+                  alt="" />
+                <img class="rounded-lg mx-auto mb-2" style="width: 40%;" src="assets/img/academic/stand.png" alt="" />
+                <img class="rounded-lg mx-auto mb-2" style="width: 50%;" src="assets/img/academic/armrest.png" alt="" />
+                <img class="rounded-lg mx-auto mb-2" style="width: 35%;" src="assets/img/academic/testing.png" alt="" />
               </div>
-              <div class="flex-shrink-0"><span class="text-primary">August 2019 - May 2020</span></div>
             </div>
           </div>
           <div class="tab-pane" id="MVRT" role="tabpanel" aria-labelledby="MVRT-tab">
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
               <div class="flex-grow-1">
-                <h3 class="mb-3">Monta Vista Robotics Team</h3>
-                <p>Dedicated to fostering a passion in science and technology within our community, the
+                <h3 class="mb-1">Monta Vista Robotics Team</h3>
+                <p class="lead mb-4"><span class="text-primary">August 2015 - June 2019</span></p>
+                <p class="lead">Dedicated to fostering a passion in science and technology within our community, the
                   Monta Vista Robotics Team inspires students and develops interpersonal skills
                   through team-based engineering challenges. Competing in the <a
                     href="https://www.firstinspires.org/robotics/frc" target="_blank">FIRST Robotics
@@ -198,7 +207,7 @@
                   imaginations and introducing many students to the exciting and expansive world of
                   engineering and STEM.</p>
                 <h4 class="mb-2">President</h4>
-                <p>Elected as President my senior year of high school, I worked to lead the team through
+                <p class="lead">Elected as President my senior year of high school, I worked to lead the team through
                   the 2019 season. While still involved with some design and manufacturing of the
                   robot, as President my goals shifted to preparing incoming members and ensuring all
                   MVRT members had an exciting and educational experience. Facing a knowledge gap due
@@ -211,19 +220,20 @@
                   years to come as well.
                 </p>
                 <h4 class="mb-2">Design</h4>
-                <p>The Monta Vista Robotics Club gave me my first taste of mechanical engineering and I
+                <p class="lead">The Monta Vista Robotics Club gave me my first taste of mechanical engineering and I
                   was instantly hooked. Watching my designs and creations come to life has always been
                   extremely satisfying and one of the main reasons I am studying mechanical
                   engineering. Through MVRT I learned to use CAD and CAM software, as well as many
                   different manufacturing techniques. The skills I picked up in high school have
                   allowed me to immediately contribute to many of my college activities.</p>
                 <h4 class="mb-2">Images</h4>
-                <img class="rounded-lg mx-auto mb-2" style="width: 30%;" src="assets/img/2019robo.png" alt="" />
-                <img class="rounded-lg mx-auto mb-2" style="width: 53%;" src="assets/img/cam.png" alt="" />
-                <img class="rounded-lg mx-auto mb-2" style="width: 43%;" src="assets/img/cad.jpg" alt="" />
-                <img class="rounded-lg mx-auto mb-2" style="width: 40%;" src="assets/img/workshop.jpg" alt="" />
+                <img class="rounded-lg mx-auto mb-2" style="width: 30%;" src="assets/img/academic/2019robo.png"
+                  alt="" />
+                <img class="rounded-lg mx-auto mb-2" style="width: 53%;" src="assets/img/academic/cam.png" alt="" />
+                <img class="rounded-lg mx-auto mb-2" style="width: 43%;" src="assets/img/academic/cad.jpg" alt="" />
+                <img class="rounded-lg mx-auto mb-2" style="width: 40%;" src="assets/img/academic/workshop.jpg"
+                  alt="" />
               </div>
-              <div class="flex-shrink-0"><span class="text-primary">August 2015 - June 2019</span></div>
             </div>
           </div>
         </div>
