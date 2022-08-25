@@ -41,7 +41,7 @@
               <li class="nav-item"><a class="nav-link active" href="work.html">Work</a></li>
               <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
               <li class="nav-item"><a class="nav-link" href="academic.html">Academic</a></li>
-              <li class="nav-item"><a class="nav-link" href="personal.html">Personal</a></li>
+              <!-- <li class="nav-item"><a class="nav-link" href="personal.html">Personal</a></li> -->
             </ul>
           </div>
         </li>
@@ -63,177 +63,123 @@
   <!-- Page Content-->
   <div class="container-fluid p-0">
     <!-- Academic-->
-    <section class="content-section" id="work">
+    <section class="content-section pt-5" id="work">
       <div class="content-section-content">
 
         <!-- Tabs -->
         <div class="sticky-top mb-2" style="background-color: #F0F4FA;">
-          <h2 class="mb-3">Work <span class="text-primary">Experience</span></h2>
+          <h2 class="mb-3 mt-0">Work <span class="text-primary">Experience</span></h2>
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="brc" data-toggle="tab" href="#BRC" role="tab" aria-selected="true">Boiler
+              <a class="nav-link active" id="bee" data-toggle="tab" href="#BEE" role="tab" aria-selected="true">Honeybee
                 Robotics</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" id="epics" data-toggle="tab" href="#EPICS" role="tab" aria-selected="false">Purdue
-                EPICS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="mvrt" data-toggle="tab" href="#MVRT" role="tab" aria-selected="false">MV
-                Robotics Team</a>
             </li>
           </ul>
         </div>
 
         <!-- Content -->
         <div class="tab-content" id="myTabContent">
-          <div class="tab-pane show active" id="BRC" role="tabpanel" aria-labelledby="BRC-tab">
+          <div class="tab-pane show active" id="BEE" role="tabpanel" aria-labelledby="BEE-tab">
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
               <div class="flex-grow-1">
-                <h3 class="mb-1">Boiler Robotics</h3>
-                <p class="lead mb-4"><span class="text-primary">January 2020 - Present</span></p>
-                <p class="lead">I currently serve as the robotic arm lead for the Boiler Robotics Club. My group is
-                  focused on the design and production of a robot arm capable of completing various
-                  tasks at the annual <a href="http://urc.marssociety.org/" target="_blank">University
-                    Rover Challenge</a>. Being a new team, my team has had the unique opportunity to
-                  build our arm from the ground up.
-                </p>
-                <h4 class="mb-2">Requirements</h4>
-                <p class="lead">Being a new team, our primary focus was on determining the design parameters for our
-                  arm. After reviewing previous competitions and the game manual for 2020, our
-                  team came up with the following requirements:
-                <ul>
-                  <li>1 meter reach and ability to grab from the ground</li>
-                  <li>5kg payload capacity</li>
-                  <li>5mm movement accuracy at max extension</li>
-                </ul>
-                </p>
-                <h4 class="mb-2">Current Status</h4>
-                <p class="lead">The fall 2020 semester focused on completing the CAD design for our robot arm,
-                  working on the previous semester's research and testing. We have settled on a SCARA
-                  style arm that allows our arm to easily reach different positions in all 6 axes. Due
-                  to limited software experience, we decided on this SCARA style to limit the control
-                  complexity. We also believe this platform gives us the most stability compared to
-                  traditional 6 or 7 axis arms. Our CAD model continues to increase in detail,
-                  allowing us to ensure all components integrate well and perform analysis on the
-                  strength of the arm and its ability to complete the required missions.
-                </p>
-                <h4 class="mb-2">Personal Contibutions</h4>
-                <p class="lead">On the logistical side, my contributions have included scheduling meetings and other
-                  housekeeping tasks. I am responsible for maintaining our bill of materials as well
-                  as ordering and distributing parts. The restrictions from COVID-19 this semester
-                  also lead to me looking into various ways to ensure my team was fully engaged and
-                  contributing. By setting consistent and reasonable goals for each team member and
-                  regularly checking in on them, team members were always able to contribute to the
-                  design throughout the semester despite being unable to meet in person. Hosting
-                  weekly meetings and recording the progress made each week allowed us to review our
-                  progress over the semester and find areas we could improve as well.
-                </p>
-                <p class="lead">On the technical side, I focused on the design of our gantry lift system for the
-                  Z-axis of the arm as well as the software stack needed to control our arm. For the
-                  gantry lift, my design focused on using a reliable leadscrew drive that prevented
-                  accidental backdriving. The custom carriage and bearing assembly ensured smooth
-                  travel as well as protection from outside elements during traversal. For software
-                  control, the team decided on using the ROS MoveIt package for control. This software
-                  package was well documented and commonly used in many industries. My main focus was
-                  adapting our model of the arm to work with the URDF format required by the software,
-                  as well as preparing a simulated environment via Gazebo to allow us to test our
-                  controls and software in conjunction with the manufacturing of our arm. In addition
-                  due
-                  to my experience with manufacturing, I worked to waterjet and mill parts towards the
-                  end of the semester and prepare for assembly starting in Spring 2021.
-                </p>
+                <h3 class="mb-1">Honeybee Robotics</h3>
+                <p class="lead mb-4"><span class="text-primary">May 2022 - August 2022</span></p>
+                <p class="lead">My junior summer I worked as a test intern at <a
+                    href="https://www.honeybeerobotics.com/" target="_blank">Honeybee Robotics</a> at their motion
+                  control division in Longmont, Colorado.
+                  Throughout this internship I worked on a number of projects across a different areas, from thermal
+                  vacuum fixtures for flight hardware to in house testing firmware and ground support equipment. Below I
+                  have highlighted a couple of noteworthy projects from the great experience I had at Honeybee. </p>
+                <div id="accordion">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        <h4 class="m-0">Universal Motor Driver</h4>
+                      </button>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+                        <p class="lead mb-0">As Honeybee planned to design and produce more powerful actuators, the test
+                          department needed to be able to run more powerful motors to test these new products. Using a
+                          commercial high voltage motor driver IC, over the course of the summer I coded firmware for a
+                          microcontroller to communicate and control the IC over SPI as well as used python to build a
+                          GUI for easy control by technicians and others running the tests. Through this project I
+                          learned a lot about microcontroller coding as well as industrial communication protocols like
+                          SPI and MODBUS.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        <h4 class="m-0">Harmonic Drive Characterization</h4>
+                      </button>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                      <div class="card-body">
+                        <p class="lead mb-0">While designing a high precision satellite actuator, a team at Honeybee
+                          needed to know if a harmonic gearbox used in a previous product could be used in this
+                          application as well. Tasked with characterizing the gearbox, I built and constructed a test
+                          platform using custom parts and a high precision stepper motor and encoder to measure the
+                          outputs and simulate the desired customer requirements. I also coded the required python
+                          programs to both execute the tests as well as process the millions of data points gathered.
+                          From my reports and data the team was able to better answer the customer on what the final
+                          specifications of the actuator would be.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        <h4 class="m-0">Reed Switch Tester Redesign</h4>
+                      </button>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                      <div class="card-body">
+                        <p class="lead mb-0">For one product line at Honeybee, an existing test was used to prescreen
+                          reed switches used in the actuator. Since the initial tester had been built, the reed switches
+                          saw roughly 50% failure rates, and as the tester was used more, the failure rate raised to
+                          90%. With the price of reed switches increasing for each batch, I worked with another intern
+                          to redesign the tester. Reusing spare assembly components, we came up with a new tester that
+                          resembled the actual flight hardware much better than the previous tester and had less room
+                          for user misalignment when testing. The new tester was also improved to test faster and be
+                          easier for those using it to quickly get the results for the reed switch. After building the
+                          new tester, the reed switch failure rate has fallen to 10%, helping the company save on
+                          component costs. Throughout my internship, no reed switches that were passed on prescreen test
+                          have failed in the final unit testing as well.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingFour">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        <h4 class="m-0">Testbox 513</h4>
+                      </button>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                      <div class="card-body">
+                        <p class="lead mb-0">One of my first projects at Honeybee was the completion of a box used to
+                          test pinouts. Using a 104 D-sub connector, the box allowed users to easily plug in components
+                          and a desktop multimeter using banana plugs. An excel file containing the pins that need to be
+                          tested and acceptable values was then input and the box would automatically run all the listed
+                          tests. For this box I designed the front panel and external connections, while also updating
+                          the firmware of the box and python GUI code needed for the end user.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <h4 class="mb-2">Images</h4>
-                <img class="rounded-lg mx-auto mb-2" style="width: 25%;" src="assets/img/academic/robot_arm.png"
+                <img class="rounded-lg mx-auto mb-2" style="width: 45%;" src="assets/img/work/honeybee_interns.png"
                   alt="" />
-                <img class="rounded-lg mx-auto mb-2" style="width: 70%;" src="assets/img/academic/rviz.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane" id="EPICS" role="tabpanel" aria-labelledby="EPICS-tab">
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-              <div class="flex-grow-1">
-                <h3 class="mb-1">PURDUE EPICS MOBI - Robbins</h3>
-                <p class="lead mb-4"><span class="text-primary">August 2019 - May 2020</span></p>
-                <p class="lead"><a href="https://engineering.purdue.edu/EPICS" target="_blank">Purdue EPICS</a> is a
-                  program that partners students with community organizations and clients to tackle
-                  local and global issues.
-                </p>
-                <h4 class="mb-2">MOBI</h4>
-                <p class="lead">The MOBI team focuses on the development of technology to assist in human mobility.
-                  Projects of this team have included interactive campus maps for those with
-                  disabilities and custom baseballs to allow visually impaired athletes to enjoy
-                  baseball as well.
-                </p>
-                <h4 class="mb-2">Robbins</h4>
-                <p class="lead">The aim of the Robbins project is to build an exam step for use during sonographic
-                  leg mapping that reduces strain in the lumbar spine and brachial joint in the
-                  sonographers and allows patients to be comfortable for the duration of the
-                  procedure. For the duration of the project, the team was partnered with IU Health
-                  Arnett's Radiology & Imaging department located in the Greater Lafayette area. The
-                  mission of the healthcare system is to improve the health of patients and the
-                  community through innovation, and excellence in care, education, research, and
-                  service.
-                </p>
-                <h4 class="mb-2">Personal Contributions</h4>
-                <p class="lead">Working with our project partner, I led my team of four in designing and
-                  manufacturing the stand. I used my skills in Solidworks to model our prototype and
-                  we manufactured and presented our improved stand in March 2020. Due to a lack of
-                  advanced manufacturing capabilities, the design had to be constructed using basic
-                  shop tools, while still meeting all requirements for safety and appearances. In
-                  addition to the design of the stand, I also implemented the testing procedures for
-                  our stand. EPICS also helped strengthen many of my soft skills as I worked to
-                  implement client feedback and meet tight deadlines.
-                </p>
-                <h4 class="mb-2">Images</h4>
-                <img class="rounded-lg mx-auto mb-2" style="width: 45%;" src="assets/img/academic/dec_matrix.png"
-                  alt="" />
-                <img class="rounded-lg mx-auto mb-2" style="width: 40%;" src="assets/img/academic/stand.png" alt="" />
-                <img class="rounded-lg mx-auto mb-2" style="width: 50%;" src="assets/img/academic/armrest.png" alt="" />
-                <img class="rounded-lg mx-auto mb-2" style="width: 35%;" src="assets/img/academic/testing.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane" id="MVRT" role="tabpanel" aria-labelledby="MVRT-tab">
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-              <div class="flex-grow-1">
-                <h3 class="mb-1">Monta Vista Robotics Team</h3>
-                <p class="lead mb-4"><span class="text-primary">August 2015 - June 2019</span></p>
-                <p class="lead">Dedicated to fostering a passion in science and technology within our community, the
-                  Monta Vista Robotics Team inspires students and develops interpersonal skills
-                  through team-based engineering challenges. Competing in the <a
-                    href="https://www.firstinspires.org/robotics/frc" target="_blank">FIRST Robotics
-                    Challenge</a>, MVRT was founded in 1997 and has taken great strides in
-                  technology and leadership by encouraging its members to further pursue their
-                  imaginations and introducing many students to the exciting and expansive world of
-                  engineering and STEM.</p>
-                <h4 class="mb-2">President</h4>
-                <p class="lead">Elected as President my senior year of high school, I worked to lead the team through
-                  the 2019 season. While still involved with some design and manufacturing of the
-                  robot, as President my goals shifted to preparing incoming members and ensuring all
-                  MVRT members had an exciting and educational experience. Facing a knowledge gap due
-                  to a smaller upperclassmen group, I coordinated with the others to create impactful
-                  workshops that allowed our incoming freshman and rising sophomores to participate
-                  more throughout the season than ever before. The rapid six week build season for
-                  this competition gave me my first real experience as a leader. Though I would have
-                  preferred a flawless season, looking back I am grateful for the opportunity to lead
-                  and have found many of the lessons learned applicable in college and hopefully the
-                  years to come as well.
-                </p>
-                <h4 class="mb-2">Design</h4>
-                <p class="lead">The Monta Vista Robotics Club gave me my first taste of mechanical engineering and I
-                  was instantly hooked. Watching my designs and creations come to life has always been
-                  extremely satisfying and one of the main reasons I am studying mechanical
-                  engineering. Through MVRT I learned to use CAD and CAM software, as well as many
-                  different manufacturing techniques. The skills I picked up in high school have
-                  allowed me to immediately contribute to many of my college activities.</p>
-                <h4 class="mb-2">Images</h4>
-                <img class="rounded-lg mx-auto mb-2" style="width: 30%;" src="assets/img/academic/2019robo.png"
-                  alt="" />
-                <img class="rounded-lg mx-auto mb-2" style="width: 53%;" src="assets/img/academic/cam.png" alt="" />
-                <img class="rounded-lg mx-auto mb-2" style="width: 43%;" src="assets/img/academic/cad.jpg" alt="" />
-                <img class="rounded-lg mx-auto mb-2" style="width: 40%;" src="assets/img/academic/workshop.jpg"
-                  alt="" />
+                <img class="rounded-lg mx-auto mb-2" style="width: 45%;" src="assets/img/work/honeybee_harmonic.png" alt="" />
+                <img class="rounded-lg mx-auto mb-2" style="width: 45%;" src="assets/img/work/honeybee_reed_switch.png" alt="" />
+                <img class="rounded-lg mx-auto mb-2" style="width: 45%;" src="assets/img/work/honeybee_testbox_513.png" alt="" />
               </div>
             </div>
           </div>
