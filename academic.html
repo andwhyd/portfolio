@@ -71,8 +71,11 @@
           <h2 class="mb-3 mt-0">Academic <span class="text-primary">Projects</span></h2>
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active p-2" id="brc" data-toggle="tab" href="#BRC" role="tab"
-                aria-selected="true">Boiler
+              <a class="nav-link active p-2" id="me588" data-toggle="tab" href="#ME588" role="tab"
+                aria-selected="true">Mechatronics Final Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2" id="brc" data-toggle="tab" href="#BRC" role="tab" aria-selected="false">Boiler
                 Robotics</a>
             </li>
             <li class="nav-item">
@@ -88,7 +91,50 @@
 
         <!-- Content -->
         <div class="tab-content" id="myTabContent">
-          <div class="tab-pane show active" id="BRC" role="tabpanel" aria-labelledby="BRC-tab">
+          <div class="tab-pane show active" id="ME588" role="tabpanel" aria-labelledby="ME588-tab">
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+              <div class="flex-grow-1">
+                <h3 class="mb-1">Mechatronics Final Project</h3>
+                <p class="lead mb-4"><span class="text-primary">August 2022 - December 2022</span></p>
+                <p class="lead">During the Fall 2022 semester I took ME588, Purdue's mechatronics offering for
+                  mechanical engineers. For the final project of this class, students were put in groups of 5 and tasked
+                  to build a small robot to compete in a soccer inspired challenge.</p>
+                <h4 class="mb-2">The Challenge</h4>
+                <p class="lead">The coming Fall 2022 semester the team will start on iterations for the wrist and elbow
+                  joint of our arm. After our initial assembly and testing last semester we have identified these
+                  subassemblies as ones that need additional attention. I will also be assisting in manufacturing for
+                  various other subteams as we work on further improving the rover. This semester will also be largely
+                  focused on the electronics and software, as we address interference issues we noticed with encoder
+                  wires as well as continue to refine and test the ROS software for controlling the arm. </p>
+                <h4 class="mb-2">Robot Design</h4>
+                <p class="lead">On the logistical side, my contributions have included scheduling meetings and other
+                  housekeeping tasks. I was responsible for maintaining our bill of materials as well as ordering and
+                  distributing parts. The restrictions from COVID-19 during past semesters also lead to me looking into
+                  various ways to ensure my team was fully engaged and contributing. By setting consistent and
+                  reasonable goals for each team member and regularly checking in on them, team members were always able
+                  to contribute to the design throughout the semester despite being unable to meet in person. Hosting
+                  weekly meetings and recording the progress made each week allowed the team to review our progress over
+                  the semester and identify areas we could improve as well. </p>
+                <p class="lead">On the technical side, I focused on the design of our gantry lift system for the Z-axis
+                  of the arm as well as the software stack needed to control our arm. For the gantry lift, my design
+                  focused on using a reliable leadscrew drive that prevented accidental backdriving. The custom carriage
+                  and bearing assembly ensured smooth travel as well as protection from outside elements during
+                  traversal. For software control, the team decided on using the ROS MoveIt package for control. This
+                  software package was well documented and commonly used in many industries. My main focus was adapting
+                  our model of the arm to work with the URDF format required by the software, as well as preparing a
+                  simulated environment via Gazebo to allow us to test our controls and software in conjunction with the
+                  manufacturing of our arm. In addition due to my experience with manufacturing, I worked to waterjet
+                  and mill parts towards the end of the semester and prepare for assembly that started in Spring 2021.
+                  As of Fall 2022, I have manufactured various components and contributed to the assembly and wiring of
+                  the arm. </p>
+                <h4 class="mb-2">Images</h4>
+                <img class="rounded-lg mx-auto mb-2" style="width: 25%;" src="assets/img/academic/robot_arm.png"
+                  alt="" />
+                <img class="rounded-lg mx-auto mb-2" style="width: 70%;" src="assets/img/academic/rviz.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane show" id="BRC" role="tabpanel" aria-labelledby="BRC-tab">
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
               <div class="flex-grow-1">
                 <h3 class="mb-1">Boiler Robotics</h3>
